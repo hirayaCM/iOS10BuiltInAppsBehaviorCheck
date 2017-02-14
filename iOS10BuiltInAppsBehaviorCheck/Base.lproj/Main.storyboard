@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C0i-OP-xrr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iOS 10 Built-In Apps Behavior Check-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS10BuiltInAppsBehaviorCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uig-qQ-wjl">
+                                <rect key="frame" x="0.0" y="84" width="375" height="563"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opS-3b-e2a">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                                        <state key="normal" title="Mail (mailto)"/>
+                                        <connections>
+                                            <action selector="didTapMailButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5Q-LV-Ncc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-Gb-hFt">
+                                        <rect key="frame" x="0.0" y="56.5" width="375" height="56"/>
+                                        <state key="normal" title="Mail (ComposeView)"/>
+                                        <connections>
+                                            <action selector="didTapMailComposeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dc-iM-WxI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-3S-3hH">
+                                        <rect key="frame" x="0.0" y="112.5" width="375" height="56.5"/>
+                                        <state key="normal" title="Calendar (EventEditView)"/>
+                                        <connections>
+                                            <action selector="didTapCalendarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CrK-AT-TVQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUg-j7-TYF">
+                                        <rect key="frame" x="0.0" y="169" width="375" height="56"/>
+                                        <state key="normal" title="Reminder"/>
+                                        <connections>
+                                            <action selector="didTapReminderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cl3-yU-Lxa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFR-l6-b5V">
+                                        <rect key="frame" x="0.0" y="225" width="375" height="56.5"/>
+                                        <state key="normal" title="Contacts"/>
+                                        <connections>
+                                            <action selector="didTapContactsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ol-P4-ean"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oet-dm-cW4">
+                                        <rect key="frame" x="0.0" y="281.5" width="375" height="56.5"/>
+                                        <state key="normal" title="Music"/>
+                                        <connections>
+                                            <action selector="didTapMusicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oi8-6K-cKi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYM-Wh-mbk">
+                                        <rect key="frame" x="0.0" y="338" width="375" height="56"/>
+                                        <state key="normal" title="iTunes Store"/>
+                                        <connections>
+                                            <action selector="didTapITunesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBd-6O-1gk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7u-ao-2iZ">
+                                        <rect key="frame" x="0.0" y="394" width="375" height="56.5"/>
+                                        <state key="normal" title="iBooks"/>
+                                        <connections>
+                                            <action selector="didTapIBooksButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qg7-7G-5oF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb3-rF-ejQ">
+                                        <rect key="frame" x="0.0" y="450.5" width="375" height="56"/>
+                                        <state key="normal" title="Map"/>
+                                        <connections>
+                                            <action selector="didTapMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pu5-Qz-NYo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs0-Wn-gVN">
+                                        <rect key="frame" x="0.0" y="506.5" width="375" height="56.5"/>
+                                        <state key="normal" title="FaceTime"/>
+                                        <connections>
+                                            <action selector="didTapFaceTimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIV-UD-HPY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uig-qQ-wjl" secondAttribute="bottom" constant="20" id="Edz-ED-LPn"/>
+                            <constraint firstItem="uig-qQ-wjl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ajO-yj-Rhb"/>
+                            <constraint firstItem="uig-qQ-wjl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dAw-ej-qkv"/>
+                            <constraint firstAttribute="trailing" secondItem="uig-qQ-wjl" secondAttribute="trailing" id="nf2-M7-84Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iOS 10 Built-In Apps Behavior Check" id="yz6-AR-ADj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xAc-zB-kuY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C0i-OP-xrr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lHw-ya-0J4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wOr-Nq-sZY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSY-Eh-kUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="37"/>
+        </scene>
+    </scenes>
+</document>
